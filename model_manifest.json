@@ -1,0 +1,34 @@
+{
+  "checkpoint_asset": "step_020000.pt",
+  "sha256": "f84db553d3079930734123a4e170efd3dc2d76deb84c46f92ee382f9704f08d2",
+  "bytes": 102885156,
+  "stage": "A",
+  "step": 20000,
+  "bits": 32,
+  "fixed_gain": 4.473848459789987,
+  "quality_reference": "VAE reconstruction of the same unwatermarked cover latent",
+  "protocol": {
+    "bits": 32,
+    "resolution": 512,
+    "latent_cache": "ae_output/fr_casial_latents_512px_20480_512_reuse_p10k.pt",
+    "fixed_gain": 4.473848459789987,
+    "amp": true,
+    "padding_mode": "zeros",
+    "final_start": 256,
+    "final_covers": 256,
+    "final_messages": 8,
+    "final_seed": 2026103015
+  },
+  "retest_guards": {
+    "passed": false,
+    "failures": [
+      "extended:rotate35_drop=+12.599pp > 1.000pp",
+      "extended:resize050_drop=+1.079pp > 1.000pp",
+      "extended_mean_drop=+0.751pp > 0.500pp",
+      "panel:resize045_drop=+1.868pp > 0.500pp"
+    ],
+    "quality_failures": []
+  },
+  "release_tag": "a20k-backup-v1",
+  "runtime_status": "Model and results backup; standalone inference runtime and matching VAE not yet included."
+}
